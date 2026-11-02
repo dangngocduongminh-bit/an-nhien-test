@@ -24,7 +24,7 @@ if (production) {
   temple.app.use(vite.middlewares);
 }
 const port = Number(process.env.PORT ?? 3000);
-temple.server.listen(port, "127.0.0.1", () =>
+temple.server.listen(port, "127.0.0.0.0", () =>
   console.log(`Chùa An Nhiên LIVE · http://127.0.0.1:${port}/admin`),
 );
 let closing = false;
